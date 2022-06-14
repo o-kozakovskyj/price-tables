@@ -1,0 +1,12 @@
+@import'price-card.scss';
+@import'_typography.scss';
+@import'_variables.scss';
+.page {
+  display: flex;
+  margin: 0;
+   background-color: #141B1C;
+}
+.container {
+  margin: auto;
+  display: flex;
+}

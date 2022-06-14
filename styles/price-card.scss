@@ -1,0 +1,133 @@
+
+@import'_variables';
+
+.price-card {
+  background: #334247;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  padding: 33px 0 40px 0;
+  margin-right: 18px;
+  overflow: hidden;
+   // Second child
+  &:nth-child(2) {
+    position: relative;
+  }
+  &:nth-child(2) .price-card__price {
+    background-color: $bluecolor;
+  }
+   &:nth-child(2) .price-card__button {
+    background-color: $bluecolor;
+  }
+
+  &:nth-child(2) .price-card__options-list-item::before {
+    content: url(../img/check-blue.png);
+  }
+  &:nth-child(2)::after {
+    content: 'popular';
+    display: block;
+    background-color:  #DC3F45;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    position: absolute;
+    right: -36px;
+    top: 40px;
+    transform: rotate(45deg);
+    padding: 5px 50px;
+    text-align: center;
+  }
+    // Second child
+
+  // Last child
+  &:last-child {
+    margin-right: 0;
+  }
+  &:last-child .price-card__price {
+    background-color:  $orangeColor;
+  }
+   &:last-child .price-card__button {
+    background-color: $orangeColor;
+  }
+
+  &:last-child .price-card__options-list-item::before {
+    content: url(../img/chack-orange.png);
+  }
+    // Last child
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 43px;
+    
+    margin: 0;
+    margin-bottom: 33px;
+    &::after {
+      display: block;
+      content: "Website";
+     font-weight: 300;
+     font-size: 18px;
+    
+     line-height: 18px;
+    }
+  }
+ 
+  &__price {
+    text-align: center;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 67px;
+    width: 100%;
+    background: $greenColor;
+    padding: 19px 110px;
+    margin-bottom: 40px;
+  }
+  &__description {
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 40px;
+   
+  }
+  &__options-list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 39px;  
+    list-style: none;
+    
+  }
+  &__options-list-item {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 16px 0;
+    &::before {
+      content: url(../img/check-green.png);
+      display: inline-block;
+      margin: 0 22px;
+     height: 13px;
+    }
+  }
+ 
+  
+   &__options-list :nth-child(odd) {
+    background-color:  #2A3438;
+    width: 100%;
+
+   
+   }
+  &__button {
+    align-self: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 20px;
+    background: $greenColor;
+    text-transform: uppercase;
+    border: none;
+    width: 155px;
+    height: 40px;
+  }
+}
