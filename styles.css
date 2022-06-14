@@ -127,6 +127,7 @@
 
 .container {
   margin: auto;
+  padding-top: 115px;
   display: flex;
 }
 
