@@ -15,6 +15,9 @@
   padding: 33px 0 40px;
   margin-right: 18px;
 }
+.price-card:last-child {
+  margin-right: 0;
+}
 .price-card__title {
   text-align: center;
   font-size: 35px;
@@ -63,9 +66,9 @@
 }
 .price-card__icon {
   display: inline-block;
-  margin: 0 22px;
   height: 13px;
   width: 13px;
+  margin: 0 22px;
 }
 .price-card__icon-green {
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
