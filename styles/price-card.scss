@@ -1,132 +1,119 @@
-
-@import'_variables';
-
 .price-card {
-  background: #334247;
+  position: relative;
   width: 380px;
-  display: flex;
-  flex-direction: column;
-  padding: 33px 0 40px 0;
-  margin-right: 18px;
+  background: #334247;
   overflow: hidden;
-   // Second child
-  &:nth-child(2) {
-    position: relative;
-  }
-  &:nth-child(2) .price-card__price {
-    background-color: $bluecolor;
-  }
-   &:nth-child(2) .price-card__button {
-    background-color: $bluecolor;
-  }
 
-  &:nth-child(2) .price-card__options-list-item::before {
-    content: url(../img/check-blue.png);
-  }
-  &:nth-child(2)::after {
-    content: 'popular';
-    display: block;
-    background-color:  #DC3F45;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    text-transform: uppercase;
-    position: absolute;
-   right:-40px;
-    top: 34px;
-    transform: rotate(45deg);
-    padding: 2px 50px;
-    text-align: center;
-  }
-    // Second child
+  padding: 33px 0 40px;
+  margin-right: 18px;
 
-  // Last child
-  &:last-child {
-    margin-right: 0;
-  }
-  &:last-child .price-card__price {
-    background-color:  $orangeColor;
-  }
-   &:last-child .price-card__button {
-    background-color: $orangeColor;
-  }
 
-  &:last-child .price-card__options-list-item::before {
-    content: url(../img/chack-orange.png);
-  }
-    // Last child
   &__title {
     text-align: center;
-    font-weight: 700;
     font-size: 35px;
     line-height: 43px;
-    
     margin: 0;
-    margin-bottom: 33px;
-    &::after {
-      display: block;
-      content: "Website";
-     font-weight: 300;
-     font-size: 20px;
-     line-height: 24px;
-    }
   }
- 
+
+  &__subtitle {
+    text-align: center;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 33px;
+  }
+
   &__price {
     text-align: center;
-    font-weight: 700;
     font-size: 55px;
     line-height: 67px;
-    width: 100%;
-    background: $greenColor;
+
     padding: 19px 110px;
     margin-bottom: 40px;
+
+    &-green {
+      background: $greenColor;
+    }
+
+    &-blue {
+      background: $blueColor;
+    }
+
+    &-orange {
+      background: $orangeColor;
+    }
   }
+
   &__description {
     text-align: center;
     font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
     margin-bottom: 40px;
-   
   }
+
   &__options-list {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 39px;  
     list-style: none;
-    
-  }
-  &__options-list-item {
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-    padding: 16px 0;
-    &::before {
-      content: url(../img/check-green.png);
-      display: inline-block;
-      margin: 0 22px;
-     height: 13px;
+    padding: 0;
+    margin: 0 0 39px;
+
+    & :nth-child(odd) {
+      background-color: #2A3438;
     }
   }
- 
-  
-   &__options-list :nth-child(odd) {
-    background-color:  #2A3438;
-    width: 100%;
 
-   
-   }
+  &__options-list-item {
+    font-weight: 300;
+    padding: 16px 0;
+
+  }
+
+  &__icon {
+    display: inline-block;
+    margin: 0 22px;
+    height: 13px;
+    width: 13px;
+
+    &-green {
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
+    }
+
+    &-blue {
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
+    }
+
+    &-orange {
+      background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
+    }
+  }
+
   &__button {
-    align-self: center;
-    font-weight: 400;
+    &-green {
+      background: $greenColor;
+    }
+
+    &-blue {
+      background: $blueColor;
+    }
+
+    &-orange {
+      background: $orangeColor;
+    }
+  }
+
+  &__ribbon {
+    position: absolute;
+    display: block;
+
+    text-align: center;
+    right: -40px;
+    top: 34px;
+    transform: rotate(45deg);
+
+    background-color: #DC3F45;
     font-size: 14px;
     line-height: 17px;
-    border-radius: 20px;
-    background: $greenColor;
     text-transform: uppercase;
-    border: none;
-    width: 155px;
-    height: 40px;
+
+    padding: 2px 50px;
+
   }
 }

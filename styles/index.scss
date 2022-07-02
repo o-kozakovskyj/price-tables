@@ -1,14 +1,6 @@
-@import'price-card.scss';
-@import'_typography.scss';
 @import'_variables.scss';
-.page {
-  display: flex;
-  margin: 0;
-   background-color: #141b1c;
-    padding: 64px 0;
-}
-.container {
-  margin: auto;
+@import'_typography.scss';
+@import'price-card.scss';
+@import'button.scss';
+@import'container.scss';
 
-  display: flex;
-}
