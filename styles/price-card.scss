@@ -34,15 +34,15 @@
     padding: 19px 110px;
     margin-bottom: 40px;
 
-    &-green {
+    &-basic {
       background: $greenColor;
     }
 
-    &-blue {
+    &-business {
       background: $blueColor;
     }
 
-    &-orange {
+    &-webshop {
       background: $orangeColor;
     }
   }
@@ -74,29 +74,29 @@
     width: 13px;
     margin: 0 22px;
 
-    &-green {
+    &-basic {
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
     }
 
-    &-blue {
+    &-business {
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
     }
 
-    &-orange {
+    &-webshop {
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
     }
   }
 
   &__button {
-    &-green {
+    &-basic {
       background: $greenColor;
     }
 
-    &-blue {
+    &-business {
       background: $blueColor;
     }
 
-    &-orange {
+    &-webshop {
       background: $orangeColor;
     }
   }
@@ -116,6 +116,5 @@
     text-transform: uppercase;
 
     padding: 2px 50px;
-
   }
 }

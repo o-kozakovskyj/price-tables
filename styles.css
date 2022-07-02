@@ -38,13 +38,13 @@
   padding: 19px 110px;
   margin-bottom: 40px;
 }
-.price-card__price-green {
+.price-card__price-basic {
   background: #5BB189;
 }
-.price-card__price-blue {
+.price-card__price-business {
   background: #3A6BA5;
 }
-.price-card__price-orange {
+.price-card__price-webshop {
   background: #EC632A;
 }
 .price-card__description {
@@ -70,22 +70,22 @@
   width: 13px;
   margin: 0 22px;
 }
-.price-card__icon-green {
+.price-card__icon-basic {
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
 }
-.price-card__icon-blue {
+.price-card__icon-business {
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
 }
-.price-card__icon-orange {
+.price-card__icon-webshop {
   background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
 }
-.price-card__button-green {
+.price-card__button-basic {
   background: #5BB189;
 }
-.price-card__button-blue {
+.price-card__button-business {
   background: #3A6BA5;
 }
-.price-card__button-orange {
+.price-card__button-webshop {
   background: #EC632A;
 }
 .price-card__ribbon {
