@@ -1,3 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141b1c;
+}
+
 .price-card {
   position: relative;
   width: 380px;
@@ -117,4 +125,20 @@
 
     padding: 2px 50px;
   }
+}
+
+.button {
+  display: block;
+  width: 155px;
+  height: 40px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+
+  margin: 0 auto;
 }
