@@ -79,8 +79,9 @@
   &__icon {
     display: inline-block;
     height: 13px;
-    width: 13px;
+    width: 15px;
     margin: 0 22px;
+    background-repeat: no-repeat;
 
     &-basic {
       background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
