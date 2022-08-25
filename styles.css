@@ -58,7 +58,7 @@
 .price-card__description {
   text-align: center;
   font-weight: 300;
-  margin-bottom: 40px;
+  margin: 0 26px 40px 26px;
 }
 .price-card__options-list {
   list-style: none;
